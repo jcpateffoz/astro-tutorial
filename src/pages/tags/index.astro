@@ -21,7 +21,7 @@ const pageTitle = "Tag Index";
 <BaseLayout pageTitle={pageTitle}>
     <div class="tags">
         {
-            tags.map((tag) => (
+            tags.map((tag: string) => (
                 <p class="tag">
                     <a href={`/tags/${tag}`}>{tag}</a>
                 </p>
